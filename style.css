@@ -1,0 +1,157 @@
+/* css resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* classes */
+
+@font-face {
+    font-family: "Folio Medium";
+    src: url("./fonts/Folio-Medium/Folio-Medium.otf") format("opentype");
+}
+
+.query__box {
+    padding-top: 40px;
+    padding-bottom: 300px;
+    margin: 22px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    container: querybox / inline-size;
+}
+
+.query__list {
+   margin: 0 auto;
+   max-width: 1160px;
+   list-style-type: none;
+   padding-left: 22px;
+   padding-right: 22px;
+   overflow-y: scroll ;
+}
+
+.query {
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.query:last-child {
+    border-bottom: none;
+}
+
+.query__title-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.query__title {
+    font-family: "Folio Medium";
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.query__details {
+    font-family: "Folio Medium";
+    color: grey;
+}
+
+.query__reply-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.query__repliers {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   padding-left: 0px;
+   padding-right: 30px;
+   justify-content: end;
+   flex-shrink: 0;
+   flex-wrap: wrap;
+}
+
+.query__repliers li {
+    margin-left: -4px;
+}
+
+.query__repliers li img {
+   border: 2px solid white;
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+}
+
+.query__replycount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    width: 100px;
+}
+
+.query__status-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+@container querybox (width < 1160px ) {
+    .query__title-details {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .query__reply-details {
+        justify-content: space-between;
+    }
+}
