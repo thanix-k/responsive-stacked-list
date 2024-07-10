@@ -42,8 +42,8 @@ table {
 	border-spacing: 0;
 }
 
-.body{
-    /* font-family: ; */
+body {
+    font-family:'Times New Roman', Times, serif;
 }
 
 .container{
@@ -100,7 +100,6 @@ table {
 
 .reply-section{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: flex-end;
     align-items: center;
 }
