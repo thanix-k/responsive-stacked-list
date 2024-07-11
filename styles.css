@@ -46,15 +46,18 @@ body {
     font-family:'Times New Roman', Times, serif;
 }
 
-.container{
+.section-container{
     border: 1px solid lightgray;
     border-radius: 15px;
     margin: 25px;
-    min-width: 360px;
+    min-width: 400px;
 }
 
-.container > ul {
-    margin: 0 auto;
+.container{
+    margin: 25px;
+    min-width: 360px;
+    max-width: 1080px;
+    margin: auto;
     padding: 30px;
 }
 
